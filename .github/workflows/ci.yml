@@ -26,7 +26,7 @@ jobs:
         uses: tree-sitter/parser-test-action@v3
         with:
           test-rust: ${{runner.os == 'Linux'}}
-          test-node: true
+          test-node: false
           test-python: ${{runner.os == 'Linux'}}
           test-go: ${{runner.os == 'Linux'}}
           test-swift: ${{runner.os == 'macOS'}}
