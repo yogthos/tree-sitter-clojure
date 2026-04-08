@@ -1,0 +1,158 @@
+===============================================================================
+No Symbols
+================================================================================
+
+^[] java.lang.String/.toUpperCase
+^[] String/.toUpperCase
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit))
+    namespace: (sym_ns)
+    name: (sym_name)))
+
+================================================================================
+One Symbol
+================================================================================
+
+^[Locale] String/.toUpperCase
+^[java.util.Locale] String/.toUpperCase
+^[String] String/.getBytes
+^[String] String/new
+^[long] Math/abs
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name)))
+
+================================================================================
+Two Symbols
+================================================================================
+
+^[long long] UUID/new
+^[long long] java.util.UUID/new
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name)))
+
+================================================================================
+Using an Underscore
+================================================================================
+
+^[_ _] clojure.lang.Tuple/create
+^[objects _] Arrays/binarySearch
+^["[Ljava.lang.Object;" _] Arrays/binarySearch
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (sym_lit
+          name: (sym_name))
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name))
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (str_lit)
+        value: (sym_lit
+          name: (sym_name))))
+    namespace: (sym_ns)
+    name: (sym_name)))
+
+================================================================================
+Using Unquoting
+================================================================================
+
+^[~a-type ~b-type] SwissArmy/staticArityOverloadMethod
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    meta: (meta_lit
+      value: (vec_lit
+        value: (unquoting_lit
+          value: (sym_lit
+            name: (sym_name)))
+        value: (unquoting_lit
+          value: (sym_lit
+            name: (sym_name)))))
+    namespace: (sym_ns)
+    name: (sym_name)))
+

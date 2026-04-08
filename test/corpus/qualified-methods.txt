@@ -1,0 +1,83 @@
+================================================================================
+Functions That Invoke Static Methods
+================================================================================
+
+java.lang.Math/abs
+Math/abs
+(map Math/abs [-1 0 1])
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    (sym_ns)
+    (sym_name))
+  (sym_lit
+    (sym_ns)
+    (sym_name))
+  (list_lit
+    (sym_lit
+      (sym_name))
+    (sym_lit
+      (sym_ns)
+      (sym_name))
+    (vec_lit
+      (num_lit)
+      (num_lit)
+      (num_lit))))
+
+================================================================================
+Functions That Invoke Instance Methods
+================================================================================
+
+java.lang.String/.toUpperCase
+String/.toUpperCase
+(map String/.toUpperCase ["ant" "bee"])
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    (sym_ns)
+    (sym_name))
+  (sym_lit
+    (sym_ns)
+    (sym_name))
+  (list_lit
+    (sym_lit
+      (sym_name))
+    (sym_lit
+      (sym_ns)
+      (sym_name))
+    (vec_lit
+      (str_lit)
+      (str_lit))))
+
+================================================================================
+Functions That Invoke Constructors
+================================================================================
+
+java.lang.Long/new
+Long/new
+(map Long/new [0 1 2])
+
+--------------------------------------------------------------------------------
+
+(source
+  (sym_lit
+    (sym_ns)
+    (sym_name))
+  (sym_lit
+    (sym_ns)
+    (sym_name))
+  (list_lit
+    (sym_lit
+      (sym_name))
+    (sym_lit
+      (sym_ns)
+      (sym_name))
+    (vec_lit
+      (num_lit)
+      (num_lit)
+      (num_lit))))
+
