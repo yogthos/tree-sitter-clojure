@@ -1,8 +1,8 @@
 {
-  "name": "tree-sitter-clojure",
+  "name": "@yogthos/tree-sitter-clojure",
   "version": "0.0.14",
   "description": "Clojure grammar for tree-sitter",
-  "repository": "https://github.com/sogaiu/tree-sitter-clojure",
+  "repository": "https://github.com/yogthos/tree-sitter-clojure",
   "license": "SEE LICENSE IN COPYING.txt",
   "main": "bindings/node",
   "types": "bindings/node",

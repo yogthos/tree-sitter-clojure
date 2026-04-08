@@ -1,12 +1,39 @@
 # tree-sitter-clojure
 
-A tree-sitter grammar for Clojure and ClojureScript
+A tree-sitter grammar for Clojure and ClojureScript, packaged with
+WebAssembly support for portable use without requiring a C compiler.
+
+This is a fork of [sogaiu/tree-sitter-clojure](https://github.com/sogaiu/tree-sitter-clojure/)
+that adds WASM builds, multi-language bindings (Node.js, Rust, Go, Python, C, Swift),
+and CI/CD workflows.
+
+## Installation
+
+```bash
+npm install @yogthos/tree-sitter-clojure
+```
+
+### Usage with web-tree-sitter (WASM)
+
+```js
+const { Parser, Language } = require("web-tree-sitter");
+
+await Parser.init();
+const parser = new Parser();
+const clojure = await Language.load(
+  require.resolve("@yogthos/tree-sitter-clojure/tree-sitter-clojure.wasm")
+);
+parser.setLanguage(clojure);
+
+const tree = parser.parse("(defn hello [name] (println name))");
+console.log(tree.rootNode.toString());
+```
 
 ## What the Repository Provides
 
 This repository provides some files used to create various artifacts
-(e.g. dynamic libraries) used for handling Clojure and ClojureScript
-source code via tree-sitter.
+(e.g. dynamic libraries, WebAssembly modules) used for handling Clojure
+and ClojureScript source code via tree-sitter.
 
 Please see the [what and why document](doc/what-and-why.md) for
 detailed information.
@@ -37,5 +64,9 @@ topics such as:
 
 ## Acknowledgments
 
-Please see the [credits](doc/credits.md).
+This project is based on the original [tree-sitter-clojure](https://github.com/sogaiu/tree-sitter-clojure/)
+grammar by [sogaiu](https://github.com/sogaiu). All credit for the grammar
+design and comprehensive test corpus goes to the original project.
+
+Please see the [credits](doc/credits.md) for additional acknowledgments.
 
