@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.13)
 project(tree-sitter-clojure
         VERSION "0.0.14"
         DESCRIPTION "Clojure grammar for tree-sitter"
-        HOMEPAGE_URL "https://github.com/sogaiu/tree-sitter-clojure"
+        HOMEPAGE_URL "https://github.com/yogthos/tree-sitter-clojure"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)

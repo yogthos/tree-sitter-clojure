@@ -1,5 +1,5 @@
 LANGUAGE_NAME := tree-sitter-clojure
-HOMEPAGE_URL := https://github.com/sogaiu/tree-sitter-clojure
+HOMEPAGE_URL := https://github.com/yogthos/tree-sitter-clojure
 VERSION := 0.0.14
 
 # repository

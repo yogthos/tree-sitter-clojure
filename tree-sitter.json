@@ -23,7 +23,7 @@
     "license": "COPYING.txt",
     "description": "Clojure grammar for tree-sitter",
     "links": {
-      "repository": "https://github.com/sogaiu/tree-sitter-clojure"
+      "repository": "https://github.com/yogthos/tree-sitter-clojure"
     }
   },
   "bindings": {
