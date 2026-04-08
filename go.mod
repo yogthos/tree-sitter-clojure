@@ -1,4 +1,4 @@
-module github.com/sogaiu/tree-sitter-clojure
+module github.com/yogthos/tree-sitter-clojure
 
 go 1.22
 

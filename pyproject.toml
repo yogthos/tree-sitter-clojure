@@ -13,13 +13,13 @@ classifiers = [
   "Topic :: Text Processing :: Linguistic",
   "Typing :: Typed",
 ]
-authors = [{  }]
+authors = [{ name = "sogaiu" }]
 requires-python = ">=3.10"
 license.text = "COPYING.txt"
 readme = "README.md"
 
 [project.urls]
-Homepage = "https://github.com/sogaiu/tree-sitter-clojure"
+Homepage = "https://github.com/yogthos/tree-sitter-clojure"
 
 [project.optional-dependencies]
 core = ["tree-sitter~=0.24"]

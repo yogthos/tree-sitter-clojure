@@ -2,12 +2,12 @@
 name = "tree-sitter-clojure"
 description = "Clojure grammar for tree-sitter"
 version = "0.0.14"
-authors = [""]
+authors = ["sogaiu"]
 license = "COPYING.txt"
 readme = "README.md"
 keywords = ["incremental", "parsing", "tree-sitter", "clojure"]
 categories = ["parser-implementations", "parsing", "text-editors"]
-repository = "https://github.com/sogaiu/tree-sitter-clojure"
+repository = "https://github.com/yogthos/tree-sitter-clojure"
 edition = "2021"
 autoexamples = false
 
